@@ -1,0 +1,19 @@
+version: '3.6'
+services:
+  api:
+    build: .
+    command: ["nodemon", "app.js"]
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: always
+    ports:
+      - ${HTTP_PORT}:${HTTP_PORT}
+  redis:
+    restart: always
+    image: redis
+    env_file:
+      - .env

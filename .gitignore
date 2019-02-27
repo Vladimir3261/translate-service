@@ -1,0 +1,5 @@
+.idea
+node_modules
+local.js
+*.db
+test.js
