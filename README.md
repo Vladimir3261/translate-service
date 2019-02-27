@@ -26,10 +26,10 @@ Configuration (.env):
  
 `REDIS_HOST` and `REDIS_PORT` - If you use your own redis (outside of docker container)
 
-`SQLITE_DB` - SQLite database name that will be created on start of containers, leave this empty if you want to user in-memory sqlite database
+`SQLITE_DB` - SQLite database name that will be created on start of containers, leave this empty if you want to use in-memory sqlite database
 
 ** Note: in memory database will be destroyed on shutdown docker container and created again while it starts
-   to keep your settings outside docker user named database and share it to your local filesystem as volume
+   to keep your settings outside docker use named database and share it to your local filesystem as volume
 
 `HTTP_PORT` - port where your http server with API will be started.
 
